@@ -18,6 +18,7 @@
 		@include from(l) {
 			&:hover {
 				background-color: var(--color-first-low);
+				color: var(--color-background);
 			}
 		}
 	}
@@ -75,6 +76,21 @@
 		@include from(l) {
 			&:hover {
 				background-color: var(--color-first);
+			}
+		}
+	}
+
+	&__gray {
+		background-color: var(--color-gray);
+		color: var(--color-background);
+		padding: 10px 14px;
+		font-size: var(--normal-font-size);
+		transition: 1s;
+		
+		@include from(l) {
+			&:hover {
+				background-color: var(--color-first-low);
+				color: var(--color-background);
 			}
 		}
 	}

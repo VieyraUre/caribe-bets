@@ -1,0 +1,106 @@
+.login-wrapper {
+	background-image: url(../../assets/img/bg-registro-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	@include from(l) {
+		background-image: url(../../assets/img/bg-registro-desktop.jpg);
+	}
+
+	&__container {
+		max-width: 1280px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		justify-content: center;
+		// align-items: center;
+		
+		@include from(l) {
+			justify-content: unset;
+		}
+	} 
+
+	&__content-form {
+		background-color: var(--color-background);
+		padding: 2rem 1rem;
+		border: 1px solid var(--color-first);
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 500px;
+
+		@include from(l) {
+			max-width: 60%;
+			justify-content: center;
+		}
+
+	}
+
+	&__content-form--h3 {
+		text-transform: uppercase;
+		color: var(--color-first);
+		text-align: center;
+	}
+	
+	&__form {
+		display: flex;
+		flex-direction: column;
+		font-weight: 700;
+		max-width: 300px;
+	}
+
+	&__form--label {
+		color: var(--color-first);
+		text-transform: uppercase;
+		width: 100%;
+	}
+	&__form--input {
+		border: 1px solid var(--color-first);
+		background-color: #F3F3F3;
+		width: 100%;
+		height: 42px;
+		border-radius: 4.29px;
+		margin-bottom: 18px;
+	}
+
+	&__links {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+	}
+	
+	&__links--a {
+		color: var(--color-first);
+		text-transform: capitalize;
+		text-decoration: underline;
+		
+		@include from(l) {
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		
+	}
+
+	&__links--item {
+		width: 100%;
+	}
+
+	&__img {
+		display: none;
+
+		@include from(l) {
+			display: block;
+			width: 40%;
+		}
+	}
+}
