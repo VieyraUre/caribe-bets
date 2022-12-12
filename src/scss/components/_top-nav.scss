@@ -1,0 +1,139 @@
+.top-nav{
+	//border-bottom 	: 1px solid #DFE0E0;
+	background    	: var(--color-main);
+	position      	: fixed;
+	top           	: 0;
+	width         	: 100%;
+	left          	: 0;
+	display 		: flex;
+	justify-content : center;
+	z-index: 1;
+	align-items: center;
+	border-bottom: 1px solid var(--color-first-low);
+
+	&__container{
+		display 		: flex;
+		justify-content : space-between;
+		align-items		: center;
+		height        	: var(--header-height);
+		width: 100%;
+		max-width: 1280px;
+		padding: 0px 15px;
+	}
+
+	&__link{
+		align-self: center;
+	}
+
+	&__logo{
+		// height: 2.8rem;
+		padding: 4px;
+		width: auto;
+		@include from(l){
+			padding: 0;
+			height: 3rem;
+		}
+	}
+
+	&__action {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin: 0.5rem 0 0 0;
+	}
+
+	&__menu{
+		@include fromTo(s,l){
+			position 		: fixed;
+			padding 		: 0 10px;
+			height 			: 100vh;
+			width 			: 260px;
+			background 		: var(--color-main);
+			transition 		: right .5s;
+			overflow-y 		: auto;
+			top 			: var(--header-height);
+			right 			: -260px;
+			&.show-top-nav {
+				right 		: 0;
+			}
+		}
+		@include from(l){
+			align-self: center;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+			gap: 3.125em;	
+			margin-top: 8px;
+			
+		}
+	}
+	&__li{
+		@include fromTo(s,l){
+			color: var(--color-first-low);
+			display: block;
+			border-bottom: 1px solid var(--color-body);;
+			padding: 10px 0;
+			margin: 0;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		font-size: 15px;
+		font-weight: 600;
+		display: inline-block;
+		list-style-type: none;
+		margin-left: 0.5em;
+	}
+	&__anchor{
+		text-transform: uppercase;
+		color: var(--color-first-low);
+		@include from(l){
+			display: block;
+
+			&:hover {
+				color: var(--color-second-dark);
+			}
+		}
+	}
+	&__btns{
+		display: flex;
+		width: 100%;
+		gap: 6px;
+		height: var(--header-height);
+		align-items: center;
+		padding: 1rem 0;
+		
+		@include from(l) {
+			gap:  2.625em
+		}
+	}
+
+
+	&__mb-iconMenu {
+		position: relative;
+		align-self: center;
+		top: 3px;
+		padding: 0;
+		span{
+			&.hamburger-inner{
+				background: var(--color-first);
+				&::after{}
+				&::before{}
+				&::after, &::before{
+					background: var(--color-first);
+				}
+			}
+		}
+		&:focus {
+			outline: 0 !important;
+			-moz-outline-style: none !important;
+			outline: thin dotted;
+			outline: 5px auto -webkit-focus-ring-color;
+			outline-offset: -2px;
+		}
+		@include from(l){
+			display: none;
+		}
+	}
+
+}

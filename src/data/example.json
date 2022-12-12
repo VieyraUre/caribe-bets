@@ -1,0 +1,101 @@
+{
+	"casos":
+		[
+			{
+				"img"		: "assets/img/img1.jpg",	
+				"title"		: "Image 1",
+				"source"	: "https://jazzsports.ag/",
+				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
+			},
+			{
+				"img"		: "assets/img/img2.jpg",	
+				"title"		: "Image 2",
+				"source"	: "https://jazzsports.ag/",
+				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
+			},
+			{
+				"img"		: "assets/img/img3.jpg",	
+				"title"		: "Image 3",
+				"source"	: "https://jazzsports.ag/",
+				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
+			},
+			{
+				"img"		: "assets/img/img4.jpg",	
+				"title"		: "Image 4",
+				"source"	: "https://jazzsports.ag/",
+				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
+			},
+			{
+				"img"		: "assets/img/img1.jpg",	
+				"title"		: "Image 1",
+				"source"	: "https://jazzsports.ag/",
+				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
+			},
+			{
+				"img"		: "assets/img/img2.jpg",	
+				"title"		: "Image 2",
+				"source"	: "https://jazzsports.ag/",
+				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
+			},
+			{
+				"img"		: "assets/img/img3.jpg",	
+				"title"		: "Image 3",
+				"source"	: "https://jazzsports.ag/",
+				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
+			},
+			{
+				"img"		: "assets/img/img4.jpg",	
+				"title"		: "Image 4",
+				"source"	: "https://jazzsports.ag/",
+				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
+			},
+			{
+				"img"		: "assets/img/img1.jpg",	
+				"title"		: "Image 1",
+				"source"	: "https://jazzsports.ag/",
+				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
+			},
+			{
+				"img"		: "assets/img/img2.jpg",	
+				"title"		: "Image 2",
+				"source"	: "https://jazzsports.ag/",
+				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
+			},
+			{
+				"img"		: "assets/img/img3.jpg",	
+				"title"		: "Image 3",
+				"source"	: "https://jazzsports.ag/",
+				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
+			},
+			{
+				"img"		: "assets/img/img4.jpg",	
+				"title"		: "Image 4",
+				"source"	: "https://jazzsports.ag/",
+				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
+			},
+			{
+				"img"		: "assets/img/img1.jpg",	
+				"title"		: "Image 1",
+				"source"	: "https://jazzsports.ag/",
+				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
+			},
+			{
+				"img"		: "assets/img/img2.jpg",	
+				"title"		: "Image 2",
+				"source"	: "https://jazzsports.ag/",
+				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
+			},
+			{
+				"img"		: "assets/img/img3.jpg",	
+				"title"		: "Image 3",
+				"source"	: "https://jazzsports.ag/",
+				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
+			},
+			{
+				"img"		: "assets/img/img4.jpg",	
+				"title"		: "Image 4",
+				"source"	: "https://jazzsports.ag/",
+				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
+			}
+		]
+}

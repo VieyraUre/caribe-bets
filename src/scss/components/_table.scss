@@ -1,0 +1,83 @@
+.main-container {
+	&__table {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__table--mobile {
+		@include from(l) {
+			display: none;
+		}
+	}
+
+	&__table--desktop {
+		display: none;
+		@include from(l) {
+			display: block;
+			display: flex;
+			width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	
+	&__table--wrapper {
+		position: relative;
+		margin: 80px 0;
+		width: 347px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__table--gorro {
+		width: 150px;
+		position: absolute;
+		top: -50px;
+		left: -40px;
+	}
+	&__table--arbol {
+		width: 100px;
+		position: absolute;
+		bottom: -20px;
+		right: -20px;
+	}
+
+	&__table--bastones {
+		width: 110px;
+		position: absolute;
+		top: -40px;
+		left: 118px;
+	}
+
+	&__table--div {
+		padding: 25px;
+		border-radius: 10px;
+		box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.5);
+	}
+
+	&__table--table {
+		border-collapse: collapse;
+	}
+	
+	&__table--td {
+		padding: 4px;
+		border-bottom: 2px solid var(--color-border);
+	}
+
+	&__table--tr {
+		&:nth-child(-n+3) {
+			color: var(--color-second-light);
+		}
+		&:nth-child(1) {
+			color: var(--color-first);
+		}
+
+
+	}
+	
+	&__table--col1 {
+		width: 50%;
+		border-right: 2px solid var(--color-border);
+	}
+}

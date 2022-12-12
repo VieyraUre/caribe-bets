@@ -1,0 +1,19 @@
+//layout
+:root {
+  --header-height 		: 4rem;
+  @include from(l) {
+    --header-height 	: 5rem;
+  }
+	//native color vars
+	--color-background      	: #FFFFFF;
+	--color-main      			: #F5F5F5;
+	--color-first      			: #1500FF;
+	--color-first-low      		: #40A9F5;
+	--color-acent      			: #8CC63F;
+	--color-second      		: #FFFF00;
+	--color-second-dark      	: #D1CB0D;
+	--color-third-hover     	: #9FFF1F;
+	--color-third-dark-hover    : #437500;
+}
+// Sass Color Vars
+$color-first 			: var(--color-first			);
