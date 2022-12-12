@@ -103,11 +103,12 @@
 	}
 
 	&__hover :nth-child(3) {
-		background-color: #BF0000;
+		background-color: var(--color-red);
 		font-size: 10px;
 
 		&:hover {
-			background-color: #FF0000;
+			background-color: var(--color-red-hover);
+			color: var(--color-main);
 		}
 	}
 

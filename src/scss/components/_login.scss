@@ -67,6 +67,8 @@
 		height: 42px;
 		border-radius: 4.29px;
 		margin-bottom: 18px;
+		padding: 0 1rem;
+		color: var(--color-first);
 	}
 
 	&__links {
@@ -97,6 +99,7 @@
 
 	&__img {
 		display: none;
+		object-fit: cover;
 
 		@include from(l) {
 			display: block;

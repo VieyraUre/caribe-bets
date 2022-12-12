@@ -76,6 +76,7 @@
 		@include from(l) {
 			&:hover {
 				background-color: var(--color-first);
+				color: var(--color-main);
 			}
 		}
 	}
