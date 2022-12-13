@@ -1,43 +1,75 @@
 <div class="login-wrapper">
 	<div class="login-wrapper__container">
 		<div class="login-wrapper__content-form">
-			<h3 class="login-wrapper__content-form--h3">ingreso</h3>
-			<form class="login-wrapper__form" method="post" action="">
-				<label class="login-wrapper__form--label" for="user">Usuario:
+			<h3 class="login-wrapper__content-form--h3">registro</h3>
+			<form class="login-wrapper__form registro" method="post" action="">
+				<!-- <label class="login-wrapper__form--label" for="user">Usuario:
 					<input class="login-wrapper__form--input" type="text" id="user" name="account" id="account"
 						required>
 				</label>
 				<label class="login-wrapper__form--label" for="password">Contraseña:
 					<input class="login-wrapper__form--input" type="password" id="password" name="password" required>
-				</label>
-				<div class="login-wrapper__links">
-					<a class="login-wrapper__links--a" href="">olvidó su contraseña</a>
-					<button class="login-wrapper__links--item btn btn__gray" type="submit">Iniciar sesión</button>
-					<button class="login-wrapper__links--item btn btn__primary" type="submit">registro</button>
+				</label> -->
+				<div class="login-wrapper__form--container ed-grid s-grid-1 m-grid-2">
+					<label class="login-wrapper__form--label" for="text">Nombre
+						<input class="login-wrapper__form--input" type="email" name="email"/>
+					</label>
+					<label class="login-wrapper__form--label" for="text">Apellido
+						<input class="login-wrapper__form--input" type="email" name="email"/>
+					</label>
+					<label class="login-wrapper__form--label" for="email">correo electrónico
+						<input class="login-wrapper__form--input" type="email" name="email" />
+					</label>
+					<label class="login-wrapper__form--label" for="email">Confirmar correo electrónico
+						<input class="login-wrapper__form--input" type="email" name="email"  />
+					</label>
+					<label class="login-wrapper__form--label" for="text">Usuario
+						<input class="login-wrapper__form--input" type="email" name="email"/>
+					</label>
+					<label class="login-wrapper__form--label" for="text">País
+						<input class="login-wrapper__form--input" type="email" name="email"/>
+					</label>
+					<label class="login-wrapper__form--label" for="text">Estado
+						<input class="login-wrapper__form--input" type="email" name="email"/>
+					</label>
+					<label class="login-wrapper__form--label" for="password">Contraseña
+						<input class="login-wrapper__form--input" type="password" name="password"/>
+					</label>
+					<label class="login-wrapper__form--label" for="password">Confirmar Contraseña
+						<input class="login-wrapper__form--input" type="number" name="password"/>
+					</label>
 				</div>
-				<div class="signUp__form--container ed-grid s-grid-1 lg-grid-2">
-					<label class="signUp__form--label" for="text">Nombre
-						<input class="signUp__form--input" type="email" name="email" placeholder="Ingresa tu nombre" />
+
+				<div class="login-wrapper__form--container ed-grid s-grid-1 m-grid-3">
+					<label class="login-wrapper__form--label" for="text">Fecha de nacimiento
+						<input class="login-wrapper__form--input" type="email" name="email"/>
 					</label>
-					<label class="signUp__form--label" for="text">Apellido
-						<input class="signUp__form--input" type="email" name="email"
-							placeholder="Ingresa tu apellido" />
+					<label class="login-wrapper__form--label" for="text">día
+						<input class="login-wrapper__form--input" type="email" name="email"/>
 					</label>
-					<label class="signUp__form--label" for="email">correo electrónico
-						<input class="signUp__form--input" type="email" name="email" placeholder="Ingresa tu correo" />
-					</label>
-					<label class="signUp__form--label" for="email">Confirmar correo electrónico
-						<input class="signUp__form--input" type="email" name="email" placeholder="Confirma tu correo" />
-					</label>
-					<label class="signUp__form--label" for="password">Contraseña
-						<input class="signUp__form--input" type="password" name="password"
-							placeholder="Ingresa tu contraseña" />
-					</label>
-					<label class="signUp__form--label" for="password">Confirmar Contraseña
-						<input class="signUp__form--input" type="number" name="password"
-							placeholder="Comfirma tu contraseña" />
+					<label class="login-wrapper__form--label" for="text">año
+						<input class="login-wrapper__form--input" type="email" name="email"/>
 					</label>
 				</div>
+
+				<div class="login-wrapper__form--container ed-grid s-grid-1 m-grid-2">
+					<label class="login-wrapper__form--label" for="text">Código promocional
+						<input class="login-wrapper__form--input" type="email" name="email"/>
+					</label>
+					<label class="login-wrapper__form--label" for="text">Cómo se entero de nosotros
+						<input class="login-wrapper__form--input" type="email" name="email"/>
+					</label>
+				</div>
+
+				<div class="registro__check">
+					<input class="registro__check--input" type="checkbox" name="checkbox" id="cbox1" value="first_checkbox"/>
+					<label class="registro__label" for="checkbox" id="check">He leído las reglas de la casa y estoy de acuerdo con las mismas
+					</label>
+				</div>
+				
+				<div class="registro__button">
+					<button class="registro__button--btn btn btn__primary" type="submit">registro</button>
+				</div> 
 			</form>
 		</div>
 		<div class="login-wrapper__img">

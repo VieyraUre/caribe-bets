@@ -18,7 +18,11 @@
 		height        	: var(--header-height);
 		width: 100%;
 		max-width: 1280px;
-		padding: 0px 15px;
+		padding: 0px 8px;
+
+		@include from(m) {
+			width: 90%;
+		}
 	}
 
 	&__link{
@@ -64,7 +68,7 @@
 			padding: 0;
 			display: flex;
 			align-items: center;
-			gap: 3.125em;	
+			gap: 2.125em;	
 			margin-top: 8px;
 		}
 	}
@@ -105,7 +109,7 @@
 		padding: 1rem 0;
 		
 		@include from(l) {
-			gap:  2.625em
+			gap:  0.625em
 		}
 	}
 

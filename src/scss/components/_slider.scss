@@ -46,16 +46,16 @@
 		}
 
 		@include from(l) {
-			width: 98%;
+			width: 90%;
 		}
 
-		@include from(lg) {
-			width: 98%;
-		}
+		// @include from(lg) {
+		// 	width: 90%;
+		// }
 		
-		@include from(xl) {
-			width: 100%;
-		}
+		// @include from(xl) {
+		// 	width: 90%;
+		// }
 	}
 	
 	&__content--h1 {
