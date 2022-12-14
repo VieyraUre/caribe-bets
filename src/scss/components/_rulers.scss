@@ -1,0 +1,42 @@
+.rulers {
+	padding-top: 0.625rem;
+	width: 100%;
+
+	h1 {
+		margin: 0;
+	}
+
+	&__h1 {
+		color: var(--color-first);
+		text-align: center;
+		text-transform: uppercase;
+		padding-bottom: 0.2rem;
+		border-bottom: 1px solid var(--color-first-low);
+		margin-bottom: 1.875rem;
+	}
+
+	&__background {
+		padding-top: 2.375rem;
+		background-color: var(--color-main);
+		padding-bottom: 52px;
+		margin-bottom: 0;
+		margin: 0;
+	}
+
+	&__container {
+		max-width: 1280px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		color: var(--color-first);
+	}
+
+	&__container--h2 {
+		text-transform: capitalize;
+	}
+
+	&__sign-up {
+		text-align: center;
+		margin-bottom: 1.5rem;
+	}
+}
