@@ -92,5 +92,9 @@
 		color: var(--color-background);
 		background-color: var(--color-first);
 		color: var(--color-background);
+	}
+	&:focus {
+		z-index: 0;
+
 	}	
 }
