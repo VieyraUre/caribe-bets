@@ -2,6 +2,24 @@
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+var openTable = function openTable() {
+
+	var btn = document.querySelector('.caballos-layout__racebook--button');
+	var table = document.querySelector('.caballos-layout__open-table');
+
+	btn.addEventListener('click', function () {
+		table.style.display = 'block';
+	});
+};
+
+exports.default = openTable;
+
+},{}],2:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
     value: true
 });
 var tabs = function tabs() {
@@ -24,9 +42,30 @@ var tabs = function tabs() {
     });
 };
 
-exports.default = tabs;
+var tabsHorses = function tabsHorses() {
+    var d = document,
+        tabs = Array.prototype.slice.apply(d.querySelectorAll('.tabs-container__tab')),
+        panels = Array.prototype.slice.apply(d.querySelectorAll('.tabs-container__panel'));
 
-},{}],2:[function(require,module,exports){
+    d.getElementById('tabs-horses').addEventListener('click', function (e) {
+        if (e.target.classList.contains('tabs-container__tab')) {
+            var i = tabs.indexOf(e.target);
+            tabs.map(function (tab) {
+                return tab.classList.remove('is-active');
+            });
+            tabs[i].classList.add('is-active');
+            panels.map(function (tab) {
+                return tab.classList.remove('is-active');
+            });
+            panels[i].classList.add('is-active');
+        }
+    });
+};
+
+exports.tabs = tabs;
+exports.tabsHorses = tabsHorses;
+
+},{}],3:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -47,44 +86,16 @@ var topNav = exports.topNav = function topNav() {
 	myFunction();
 };
 
-// export const topNav = () => {
-// 	const 
-// 	d = document,
-// 	headerBtn = d.querySelector('.hamburger'),
-// 	menu = d.querySelector('.top-nav__menu');
-
-// 	headerBtn.addEventListener('click', e => {
-// 		e.preventDefault();
-// 		headerBtn.classList.toggle('is-active')
-// 		menu.classList.toggle('is-active')
-
-// 	})
-// };
-
-
-// export const topNav = () => {
-// 	// Aqui definimos las variables
-// 	const 
-// 	d = document,
-// 	headerBtn = d.querySelector('.hamburger'),
-// 	menu = d.querySelector('.top-nav__menu');
-
-// 	// aqui creamos la funcion que ejecuta el toogle del menu
-// 	headerBtn.addEventListener('click', e =>{
-// 		e.preventDefault();
-// 		headerBtn.classList.toggle('is-active'),
-// 		menu.classList.toggle('is-active');
-// 	});
-// }
-
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 'use strict';
 
 var _topNav = require('./components/topNav');
 
 var _tabs = require('./components/tabs');
 
-var _tabs2 = _interopRequireDefault(_tabs);
+var _openTable = require('./components/openTable');
+
+var _openTable2 = _interopRequireDefault(_openTable);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -94,10 +105,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 		// functions here
 	} else if (document.body.classList.contains('banca')) {
 		// functions here
-		(0, _tabs2.default)();
+		(0, _tabs.tabs)();
+	} else if (document.body.classList.contains('caballos')) {
+		// functions here
+		(0, _tabs.tabsHorses)();
+		(0, _openTable2.default)();
 	}
 })();
 
-},{"./components/tabs":1,"./components/topNav":2}]},{},[3]);
+},{"./components/openTable":1,"./components/tabs":2,"./components/topNav":3}]},{},[4]);
 
 //# sourceMappingURL=scripts-min.js.map
