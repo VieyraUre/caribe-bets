@@ -1,0 +1,95 @@
+.sport-rules {
+	padding-top: 0.625rem;
+
+	&__container {
+		max-width: 1280px;
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 1.25rem;
+	}
+
+	&__table {
+		color: var(--color-first);
+	}
+
+	&__container-table {
+		width: 100%;
+		overflow-x: scroll;
+		@include from (m){
+			overflow-x: auto;
+		}
+	}
+	
+	&__table{
+		width: 100%;
+		border-collapse: separate;
+		border-spacing: 0 5px;
+		width: 1250px;
+	}
+	
+	&__table--col1 {
+		border-right: 0.96px solid var(--color-first);
+	}
+	
+	&__table--th {
+		font-weight: 500;
+		border-bottom: 0.96px solid var(--color-first);
+		padding: 4px 1rem;
+		width: 220px;
+	}
+	
+	&__table--th-bold {
+		border-bottom: 0.96px solid var(--color-first);
+		font-weight: 800;
+		text-align: center;
+	}
+
+	&__table--td1 {
+		background-color: var(--color-first);
+		color: var(--color-background);
+		padding: 0.5rem 1rem;
+		border: 0.96px solid var(--color-first);
+		width: 220px;
+		text-align: center;
+	}
+	
+	&__table--td2 {
+		padding: 0.5rem 1rem;
+		border: 0.96px solid var(--color-first);
+
+	}
+	
+	&__sign-up {
+		text-align: center;
+	}
+
+	&__accordion {
+		max-width: 1280px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1rem;
+		
+		@include from(l) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__accordion--item {
+		color: var(--color-first );
+	}
+	
+}
+//le caigo a los estilos bootstrap 5
+.accordion-button {
+	background-color: var(--color-main);
+	color: var(--color-first);
+	text-transform: capitalize;
+
+	&:not(.collapsed) {
+		color: var(--color-background);
+		background-color: var(--color-first);
+		color: var(--color-background);
+	}	
+}
