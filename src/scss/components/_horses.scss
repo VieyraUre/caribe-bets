@@ -68,6 +68,7 @@
 		border-bottom: 0.96px solid var(--color-first);
 		font-weight: 800;
 		text-align: center;
+		text-transform: capitalize;
 	}
 	
 	&__racebook-table--td {
@@ -75,6 +76,7 @@
 		border-bottom: 0.96px solid var(--color-first);
 		text-align: center;
 		width: 220px;
+		text-transform: capitalize;
 	}
 
 	&__racebook--warning {
@@ -108,4 +110,8 @@
 		text-align: center;
 	}
 	
+}
+
+.open {
+	display: none;
 }
